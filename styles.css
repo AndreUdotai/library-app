@@ -40,11 +40,6 @@ span.navbar-toggler-icon {
     background-image: linear-gradient(rgb(242, 242, 242), rgb(66, 207, 0), rgb(242, 242, 242));
 }
 
-#readingCount {
-    background-color: rgb(207, 204, 0);
-    background-image: linear-gradient(rgb(242, 242, 242), rgb(207, 204, 0), rgb(242, 242, 242));
-}
-
 #notStartedCount {
     background-color: rgb(207, 41, 0);
     background-image: linear-gradient(rgb(242, 242, 242), rgb(207, 41, 0), rgb(242, 242, 242));
@@ -91,7 +86,7 @@ button {
     background-color: rgb(21, 123, 189) !important;
 }
 
-.read, .reading, .notRead {
+.read, .notRead {
     text-align: center;
     color: white;
     background-position: cover;
@@ -102,12 +97,7 @@ button {
 
 .read {
     border-right: solid 10px rgb(66, 207, 0, 0.8);
-    background-image: url(read.jpeg);
-}
-
-.reading {
-    border-right: solid 10px rgba(255, 251, 0, 0.8);
-    background-image: url(reading2.jpeg);
+    background-image: url(reading.jpeg);
 }
 
 .notRead {
