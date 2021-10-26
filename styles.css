@@ -1,5 +1,10 @@
+body {
+    background-color: hsl(0,0.0%,94.9%)!important; 
+}
+
 #navbar {
-    background-color: rgb(242, 242, 242);
+    /* background-color: rgb(242, 242, 242); */
+    background-color: rgb(11, 24, 36);
 }
 
 a.nav-link {
@@ -16,14 +21,183 @@ span.navbar-toggler-icon {
 
 .nav-item div {
     display: flex;
-    background-color: rgb(21, 123, 189);
     align-items: center;
     padding-top: 1px;
     padding-right: 3px;
     padding-left: 3px;
-    background-image: linear-gradient(rgb(242, 242, 242), rgb(21, 123, 189), rgb(242, 242, 242));
     color: white;
+    border-radius: 5px;
+    width: 36px;
+}
+
+#allBooksCount {
+    background-color: rgb(21, 123, 189);
+    background-image: linear-gradient(rgb(242, 242, 242), rgb(21, 123, 189), rgb(242, 242, 242));
+}
+
+#readCount {
+    background-color: rgb(66, 207, 0);
+    background-image: linear-gradient(rgb(242, 242, 242), rgb(66, 207, 0), rgb(242, 242, 242));
+}
+
+#readingCount {
+    background-color: rgb(207, 204, 0);
+    background-image: linear-gradient(rgb(242, 242, 242), rgb(207, 204, 0), rgb(242, 242, 242));
+}
+
+#notStartedCount {
+    background-color: rgb(207, 41, 0);
+    background-image: linear-gradient(rgb(242, 242, 242), rgb(207, 41, 0), rgb(242, 242, 242));
+}
+
+li.nav-item {
+    border: 1px rgb(95, 132, 156, 0.1) solid;
+    margin-right: 3px;
+}
+
+a.nav-link {
+    width: 105px;
+}
+
+.book {
+    background-color:whitesmoke;
+    padding: 50px 2px;
     border-radius: 5px;
 }
 
 
+
+.title {
+    /* color: rgb(154, 178, 247); */
+    color: rgb(21, 123, 189);
+    font-size: 2rem;
+    font-family: 'Satisfy', cursive;
+    background-color: rgb(19, 14, 14, 0.7);
+    /* box-shadow: inset 0 0 0 500px  rgba(236, 234, 234, 0.7); */
+
+}
+
+.bottom {
+    display: flex;
+    justify-content: space-around;
+}
+
+.author, .pages, .dateAdded {
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+
+button {
+    background-color: rgb(21, 123, 189) !important;
+}
+
+.read, .reading, .notRead {
+    text-align: center;
+    color: white;
+    background-position: cover;
+    background-repeat: no-repeat;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+    box-shadow: inset 0 0 0 500px  rgba(44, 42, 42, 0.7);
+}
+
+.read {
+    border-right: solid 10px rgb(66, 207, 0, 0.8);
+    background-image: url(read.jpeg);
+}
+
+.reading {
+    border-right: solid 10px rgba(255, 251, 0, 0.8);
+    background-image: url(reading2.jpeg);
+}
+
+.notRead {
+    border-right: solid 10px rgb(207, 41, 0, 0.8);
+    background-image: url(notRead2.jpeg);
+}
+
+.container .row {
+    /* background-color: red; */
+    display: flex;
+    flex-wrap: wrap;
+    flex: 1;
+    justify-content: center;
+}
+
+.book {
+    margin-right: 20px;
+    padding-left: 10px;
+    margin-bottom: 20px;
+}
+
+
+
+
+
+
+/* body {font-family: Arial, Helvetica, sans-serif;}
+* {box-sizing: border-box;} */
+
+/* Button used to open the contact form - fixed at the bottom of the page */
+.open-button {
+    position: fixed;
+    right: 28px;
+    bottom: 23px;
+    color: rgb(21, 123, 189);
+    background-color: white !important;
+    border-radius: 50%;
+    border: none;
+}
+
+/* The popup form - hidden by default */
+.form-popup {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 15px;
+  border: 3px solid #f1f1f1;
+  z-index: 9;
+}
+
+/* Add styles to the form container */
+.form-container {
+  max-width: 300px;
+  padding: 10px;
+  background-color: white;
+}
+
+/* Full-width input fields */
+.form-container input[type=text], .form-container input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #f1f1f1;
+}
+
+/* When the inputs get focus, do something */
+.form-container input[type=text]:focus, .form-container input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Set a style for the submit/login button */
+.form-container .btn {
+  background-color: #04AA6D;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom:10px;
+  opacity: 0.8;
+}
+
+/* Add a red background color to the cancel button */
+.form-container .cancel {
+  background-color: red;
+}
+
+/* Add some hover effects to buttons */
+.form-container .btn:hover, .open-button:hover {
+  opacity: 1;
+}
