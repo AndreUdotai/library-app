@@ -49,7 +49,7 @@ function displayBooks (){
             <p class="dateAdded">added on <span>${book.date}</span></p>
             <div class="bottom">
                 <button class="btn btn-primary">${book.read}</button>
-                <button class="btn btn-primary">Remove</button>
+                <button class="btn btn-primary" id="remove">Remove</button>
             </div>
         </div>`
 
