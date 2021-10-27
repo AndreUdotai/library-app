@@ -71,9 +71,9 @@
             </div>
         </div>
         <div class="container mt-4">
-            <div class="row">
+            <div class="row" id="row">
                 <!-- <div class="col-lg-3 col-md-6 col-sm-12 text-center"> -->
-                    <div class="book read" style="width: 16rem">
+                    <!-- <div class="book read" style="width: 16rem">
                         <h5 class="title">Mean Men</h5>
                         <p>By <span class="author">Andre Udotai</span></p>
                         <p><span class="pages">400</span> pages</p>
@@ -82,10 +82,10 @@
                             <button class="btn btn-primary">Read</button>
                             <button class="btn btn-primary">Remove</button>
                         </div>
-                    </div>
+                    </div> -->
                 <!-- </div> -->
                 <!-- <div class="col-lg-3 col-md-6 col-sm-12 text-center"> -->
-                    <div class="book notRead" style="width: 16rem">
+                    <!-- <div class="book notRead" style="width: 16rem">
                         <h5 class="title">Happy Faces</h5>
                         <p>By <span class="author">Andre Udotai</span></p>
                         <p><span class="pages">456</span> pages</p>
@@ -94,7 +94,7 @@
                             <button class="btn btn-primary">Not Yet Read</button>
                             <button class="btn btn-primary">Remove</button>
                         </div>
-                    </div>
+                    </div> -->
                 <!-- </div> -->
             </div>
         </div>
@@ -106,31 +106,31 @@
         <div class="form-popup" id="myForm">
             <form action="/action_page.php" class="form-container">
                 <h1>Add New Book</h1>
-                <div class="mb-1">
-                    <!-- <label for="title" class="form-label"><b>Title</b></label> -->
-                    <input type="text" class="form-control" placeholder="Enter Book Title" name="title" required>
+                <div>
+                    <label for="title" class="form-label"><b>Title</b></label>
+                    <input id="title" type="text" class="form-control" placeholder="Enter Book Title" name="title" required>
                 </div>
-                <div class="mb-1">
-                    <!-- <label for="author" class="form-label"><b>Author</b></label> -->
-                    <input type="text" class="form-control" placeholder="Enter Name of Author" name="author" required>
+                <div>
+                    <label for="author" class="form-label"><b>Author</b></label>
+                    <input id="author" type="text" class="form-control" placeholder="Enter Name of Author" name="author" required>
                 </div>
-                <div class="mb-1">
-                    <!-- <label for="numberOfPages" class="form-label"><b>Number of Pages</b></label> -->
-                    <input type="number" class="form-control" placeholder="Enter number of pages" name="numberOfPages" required><br>
+                <div>
+                    <label for="numberOfPages" class="form-label"><b>Number of Pages</b></label>
+                    <input id="numOfPages" type="number" class="form-control" placeholder="Enter number of pages" name="numberOfPages" required><br>
                 </div>
-                <div class="mb-3">
-                    <!-- <label for="date" class="form-label"><b>Date Added</b></label> -->
-                    <input type="date" class="form-control" placeholder="Enter Date" name="date" required>
-                </div>
-                <div class="mb-3">
+                <!-- <div>
+                    <label for="date" class="form-label"><b>Date Added</b></label>
+                    <input id="date" type="date" class="form-control" placeholder="Enter Date" name="date" required>
+                </div> -->
+                <div>
                     <label for="status" class="form-label"><b>Status</b></label>
-                    <select class="form-select form-select-lg mb-3" aria-label=".form-select-lg example">
+                    <select class="form-control form-select form-select-lg mb-3" aria-label=".form-select-lg example" id="status"> 
                         <option class="form-select" selected>Open this select menu</option>
-                        <option class="form-select" value="read">Read</option>
-                        <option class="form-select" value="notStarted" >Not Yet Read</option>
+                        <option class="form-select" value="Read">Read</option>
+                        <option class="form-select" value="Not yet started">Not Yet Read</option>
                     </select>
                 </div>
-                <button type="submit" class="btn">Add</button>
+                <button type="submit" class="btn" id="add">Add</button>
                 <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
             </form>
         </div>
