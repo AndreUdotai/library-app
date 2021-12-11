@@ -131,8 +131,8 @@ addNewBook.addEventListener('click', (e) => {
     form.reset();
 });
 
+let row = document.getElementById('row');
 row.addEventListener('click', function (e) {
-    let row = document.getElementById('row');
 
     // Removes a book from the myLibrary array by comparing the book's id and the dataset attributes
     if (e.target.dataset.id) {
@@ -145,8 +145,8 @@ row.addEventListener('click', function (e) {
 
     // Toggles the read status
     if (e.target.dataset.ud) {
-        for (book of myLibrary) {
-            if (book.id === e.target.dataset.ud) {
+        for (let book of myLibrary) {
+            if (book.id == e.target.dataset.ud) {
                 book.toggleRead();
                 displayBooks();
             }
