@@ -133,9 +133,9 @@ button {
     right: 28px;
     bottom: 23px;
     color: rgb(21, 123, 189);
-    background-color: white !important;
-    border-radius: 50%;
+    background-color: transparent !important;
     border: none;
+    opacity: 0.8;
 }
 
 /* The popup form - hidden by default */
